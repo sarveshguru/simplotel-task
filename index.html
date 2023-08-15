@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="hero-section">
+
+    <!-- navbar -->
+    <div class="navbar">
+
+      <div class="menu-btn">
+        <div class="m-bar"><img src="./images/menu.png" alt=""></div>
+      </div>
+
+
+      <div class="a">
+        <a href="#">Home</a>
+        <a href="#">Order</a>
+        <a href="#">Food</a>
+        <a href="#">Restaurant</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="b">
+        <a href="#"><img src="./images/phone.png" alt=""></a>
+        <a href="#"><img src="./images/cart.png" alt=""></a>
+      </div>
+    </div>
+
+    <!-- banner -->
+
+    <div class="hero-page">
+      <div class="banner">
+
+        <!-- txt-box -->
+        <div class="txt-box">
+          <h1>LOREM IPSUM</h1>
+          <p>Lorem Ipsum has been the industry's standard dummy</br>text ever since the 1500s, when an unknown printer
+            took</br>a galley of type and scrambled it to make a type</br>specimen book.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- order section -->
+
+  <section class="card-section">
+    <div class="head-order">
+      <h1>Order Now</h1>
+    </div>
+    <div class="container">
+
+      <div class="card-container">
+
+        <!-- card -->
+        <div class="card">
+          <img src="./images/img4.jpg" alt="">
+          <div class="card-info">
+            <h4>BURGER</h4>
+            <p>Lorem Ipsum has been the</br>industry's standard dummy text</p>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card">
+          <img src="./images/img2.jpg" alt="">
+          <div class="card-info">
+            <h4>PIZZA</h4>
+            <p>Lorem Ipsum has been the</br>industry's standard dummy text</p>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="card">
+          <img src="./images/img3.jpg" alt="">
+          <div class="card-info">
+            <h4>PASTA</h4>
+            <p>Lorem Ipsum has been the</br>industry's standard dummy text</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <button>Order</button>
+
+  </section>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var menuIcon = document.querySelector(".m-bar");
+      var navbarLinks = document.querySelector(".a");
+
+      menuIcon.addEventListener("click", function () {
+        navbarLinks.classList.toggle("show-links");
+      });
+
+      // Add event listener to close the menu on link click
+      navbarLinks.addEventListener("click", function (event) {
+        if (event.target.tagName === "A") {
+          navbarLinks.classList.remove("show-links");
+        }
+      });
+
+      // Add event listener to close the menu on outside click
+      document.addEventListener("click", function (event) {
+        var target = event.target;
+
+        if (!navbarLinks.contains(target) && !menuIcon.contains(target)) {
+          navbarLinks.classList.remove("show-links");
+        }
+      });
+    });
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>

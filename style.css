@@ -1,0 +1,411 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+section {
+    background: linear-gradient(to right, #fe67c4, #ffdc5a);
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.hero-section {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+/* navbar */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.navbar .a {
+    margin-left: 10%;
+    display: flex;
+    float: left;
+    width: 90%;
+    justify-content: space-evenly;
+    transition: all ease-in-out .5s;
+}
+
+.navbar .b {
+    display: flex;
+    float: right;
+    width: 10%;
+    justify-content: space-evenly;
+    margin-right: 1%;
+}
+
+
+.navbar div a {
+    color: black;
+    text-decoration: none;
+    font-family: serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.navbar div img {
+    height: 27px;
+}
+
+/* hero section */
+
+.hero-page .banner {
+    height: calc(100vh - 10vh);
+    background: url(./images/img1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.hero-page .banner img {
+    width: 100vw;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+
+}
+
+.txt-box {
+    position: absolute;
+    background-color: rgba(255, 113, 113, 0.5);
+    padding: 2.281rem;
+    top: 30%;
+    right: 50%;
+    left: 5%;
+    overflow-y: hidden;
+    transition: all ease-in-out .3s;
+}
+
+.txt-box h1 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #fff;
+    padding-bottom: 0.4rem;
+    transition: all ease-in-out .3s;
+}
+
+.txt-box p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: #fff;
+    padding-bottom: 0.4rem;
+    transition: all ease-in-out .3s;
+}
+
+/* order section */
+
+
+.card-section {
+    text-align: center;
+    height: min-content;
+}
+
+.head-order h1 {
+    text-align: center;
+    font-size: 3.25rem;
+    letter-spacing: 0.3rem;
+    color: #fff;
+    transition: all ease-in-out .3s;
+}
+
+.container {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 0px none;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    width: fit-content;
+    border-radius: 0px 70px;
+    margin: 0px 16px 16px 16px;
+}
+
+.card img {
+    object-fit: cover;
+    height: 270px;
+    width: 270px;
+    border-radius: 0px 70px 0px 0px;
+    transition: all ease-in-out .3s;
+}
+
+.card .card-info {
+    margin-top: 1rem;
+}
+
+.card .card-info h4 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.card .card-info p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+button {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, .3);
+    outline: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:1200px) {
+
+    /* txt-box */
+    .txt-box h1 {
+        font-size: 2.5rem;
+    }
+
+    .txt-box p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    /* txt-box */
+    .txt-box h1 {
+        font-size: 2.5rem;
+    }
+
+    .txt-box p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    /* txt-box */
+    .txt-box h1 {
+        font-size: 2rem;
+    }
+
+    .txt-box p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:570px) {
+
+    /* txt-box */
+    .txt-box {
+        right: 25%;
+        top: 20%;
+    }
+
+    .txt-box h1 {
+        font-size: 1.5rem;
+    }
+
+    .txt-box p {
+        font-size: 1rem;
+    }
+
+    /* order-head */
+    .head-order h1 {
+        font-size: 2.7rem;
+    }
+
+    /* card-img */
+    .card img {
+        height: 230px;
+        width: 230px;
+    }
+
+}
+
+
+@media (max-width:340px) {
+
+    /* txt-box */
+    .txt-box {
+        right: 20%;
+    }
+
+    .txt-box h1 {
+        font-size: 1rem;
+    }
+
+    .txt-box p {
+        font-size: .7rem;
+    }
+
+    /* order-head */
+    .head-order h1 {
+        font-size: 2.5rem;
+    }
+
+    /* card-img */
+    .card img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .navbar .b{
+        width: 38%;
+    }
+
+    .navbar .a {
+        display: none;
+    }
+
+    .menu-btn {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .navbar .a.show-links {
+        width: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .a a{
+        opacity: 0.5;
+    }
+
+    .navbar .a a:hover{
+        opacity: 1;
+    }
+
+    .navbar .a a{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        width: 100%;
+        text-align: end;
+        margin-right: 5rem;
+    }
+    
+    .navbar .a.show-links  ~ .b{
+        display: none;
+    }
+
+}
